@@ -127,6 +127,7 @@ section.imagem{
     color: white;
     box-shadow: inset 0px 0px 13px 3px rgba(0, 0, 0, 0.486);
     background-attachment: fixed;
+    
 
 }
 /* Configuração da section imagem: 
@@ -137,7 +138,7 @@ section.imagem{
 */
 #img01{
     background-image: url(imagens/background001.jpg);
-    background-position: right center;
+    background-position: left center;
     background-size: cover;
 }
 
