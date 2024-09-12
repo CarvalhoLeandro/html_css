@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* Regra padrão para css  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Configuração geral recomendada */
+
+html, body{
+    min-height: 100vh;
+    background-color: gray;
+}
+/*Configurações do corpo principal do site:
+    Tamanho mínimo 100% do viewhight(100% da altura do site) se fosse 100vw seria 100% view widht.
+
+ */
+
+ header{
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+/* Configurações do Cabeçalho
+    Cor de fundo: Preto
+    Cor da fonte: Branco
+    Alinhamento de texto: Centro
+ */
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+/*Configurações do título
+    Preenchimento: 50px
+    fonte: todas letras em maúsculo mas somente as iniciais são grandes.
+    (Para colocar todas em maiúsculas no mesmo tamanho use 'text-transform:uppercase')
+*/
+
+header > p{
+    padding-bottom: 50px;
+
+}
+/* Configuração prágrafo do cabeçalho: 
+    Preenchimento embaixo: 50px
+ */
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Configuração de links: 
+    Cor da fonte: Branco
+    Sem sublinhado
+    Negrito */
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+/*Configuração de pseudo classe no link
+    hover: sublinhe o texto quando passar o cursor em cima
+ */
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+/* Configuração de todas as sections: 
+    -Preenchiemento: 10% do view height(altura) em cima e em baixo para alongar verticalmente a página e dar um efeito melhor no parallax.
+    -Preenchimento na esquerda: 30px
+    -Distância entre linhas: 2em
+*/
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 250px;
+
+}
+/* Confirando uma box meio tranparente para constratar com a imagem de fundo e ficar com melhor visibilidade para leitura*/
+
+
+
+
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+/*Configuração da section normal: 
+ 
+ */
+
+section.imagem{
+    background-color: #966565;
+    color: white;
+
+}
+/* Configuração da section imagem: 
+
+*/
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Configuração do rodapé: 
+    Cor de fundo: Preto
+    Cor da fonte: Branco
+    Alinhamento de texto: Centro
+    Preenchimento: 10px */
