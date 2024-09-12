@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /* Regra padrão para css  */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+/* Importando as fontes 'Passion One' e 'Sriracha'  */
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3:  "Sriracha", cursive;
+}
+/* Configurando variáveis de fonte  */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,10 +21,12 @@
 html, body{
     min-height: 100vh;
     background-color: gray;
+    font-family: var(--fonte1);
+    
 }
 /*Configurações do corpo principal do site:
-    Tamanho mínimo 100% do viewhight(100% da altura do site) se fosse 100vw seria 100% view widht.
-
+    -Tamanho mínimo 100% do viewhight(100% da altura do site) se fosse 100vw seria 100% view widht.
+    -Fonte padrão do site
  */
 
  header{
@@ -30,11 +43,15 @@ html, body{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
 }
 /*Configurações do título
-    Preenchimento: 50px
+    -Preenchimento: 50px
     fonte: todas letras em maúsculo mas somente as iniciais são grandes.
     (Para colocar todas em maiúsculas no mesmo tamanho use 'text-transform:uppercase')
+    -Fonte do título
+    -Tamanho Fonte(Não é muito recomendável Mas é um jeito do site se tornar responsivel colocando o tamanho da fonte percentualmente relacionado ao tamanho do 'vw' (view Weidt) 
 */
 
 header > p{
@@ -68,22 +85,33 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 2.6vw;
+    
+   
 }
 /* Configuração de todas as sections: 
     -Preenchiemento: 10% do view height(altura) em cima e em baixo para alongar verticalmente a página e dar um efeito melhor no parallax.
     -Preenchimento na esquerda: 30px
     -Distância entre linhas: 2em
+    -Tipo da fonte
 */
+section > p{
+    padding: 2em;
+}
+
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.274);
-    width: 250px;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
 
 }
-/* Confirando uma box meio tranparente para constratar com a imagem de fundo e ficar com melhor visibilidade para leitura*/
-
-
-
+/* Confirando uma box meio tranparente para constratar com a imagem de fundo e ficar com melhor visibilidade para leitura
+    -Display inline-block apapta a box de acordo com o tamanho do conteúdo
+    -Sombra no texto*/
+    
 
 
 section.normal{
@@ -97,11 +125,27 @@ section.normal{
 section.imagem{
     background-color: #966565;
     color: white;
+    box-shadow: inset 0px 0px 13px 3px rgba(0, 0, 0, 0.486);
+    background-attachment: fixed;
 
 }
 /* Configuração da section imagem: 
-
+    -Cor de fundo
+    -Cor de fonte
+    -Sombra interna
+    -Fundo fixado
 */
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center; 
+    background-size: cover;
+}
 
 
 
@@ -116,3 +160,6 @@ footer{
     Cor da fonte: Branco
     Alinhamento de texto: Centro
     Preenchimento: 10px */
+footer > p{
+    font-size: 1.9vw;
+}
