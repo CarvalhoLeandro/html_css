@@ -162,5 +162,5 @@ footer{
     Alinhamento de texto: Centro
     Preenchimento: 10px */
 footer > p{
-    font-size: 1.9vw;
+    font-size: .8em;
 }
