@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas</title>
+</head>
+<body>
+    <h1>Imagens Responsivas</h1>
+
+    <!-- Adaptando o html para tornar as imagens dinâmicas -->
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminue o tamanho do navegador.</p>
+
+    <!-- A tag 'picture' permite que seja utilizado várias fontes da mesma imagem -->
+    <picture>
+        <!-- Com o tamanho máximo de largura de 720px a imagem 'p' vai ser aberta -->
+        <source media="(max-width: 720px)" srcset="foto_p.png" type="image/png">
+        <!-- Com o tamanho máximo de largura de 1010px a imagem 'm' vai ser aberta -->
+        <source media="(max-width: 1010px)" srcset="foto_m.png" type="image/png">
+        <!-- A imagem 'g' é a imagem default para largura maior que 1010px -->
+        <img src="foto_g.png" alt="foto p">
+    </picture>
+
+   
+
+
+
+</body>
+</html>

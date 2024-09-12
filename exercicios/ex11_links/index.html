@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    
+    <!----------------- "rel" --------------------- 
+    *'next' indica que o link é para a próxima parte do documento atual
+
+    *'prev' indica que o link é para a parte anterior do documento atual
+
+    *'author' indica que é um link para o site do autor do artigo atual
+
+    *'external' indica que é um link para outro site que não faz parte do site 
+    
+    --------------------"target"----------------------
+    Se for utilizar link externo é recomendável abrir em nova aba.
+    
+    *'_blank' vai abrir o link em uma nova janela em branco
+    *'_self' vai abrir o link na janela ou frame atual  (padrão)
+
+    -->
+
+    <h1>Trabalhando com Links</h1>
+
+    <h2>Links Externos</h2>
+    <p>Você pode acessar o meu <a href="https://github.com/CarvalhoLeandro ">repositório público no github.</a></p>
+    
+    <br>
+
+    <p><a href="https://www.youtube.com/@leandrocarvalho8992" rel="external" target="_blank">Acesse aqui</a> o meu canal no youtube</p>
+
+    <h2>Links Internos</h2>
+
+    <!--
+    -----------------"rel"---------------------
+    Na página principal usamos o parâmetro 'next' para indicar que o link ira direcionar para a próxima página
+    
+    Nas páginas secundárias usamos 'prev' para indicar que estamos voltando para as páginas anteriores
+
+    Quando usamos links de sites como de patrocinadores em que não queremos dar aval utilizamos 'nofollow' para o google não seguir
+    -->
+    <p>Esta é a primeira página do site. <p>
+    
+    <p><a href="./pagina02.html" rel="next"> Clique Aqui</a> para a página 02</p>
+
+    <p><a href="../exo11_links/noticias/pagina03.html" rel="next">Clique aqui </a>para a página 03.</p>
+
+    <p><a href="/ex011.1_links_downloads/index.html" rel="next" target="_self">Clique Aqui</a> para página downloads.</p>
+
+
+
+
+    <p>Este site é um oferecimento do <a href="https://www.cursoemvideo.com/" rel="nofollow" target="_blank">Curso em video.</a></p>
+
+    
+    
+
+
+
+</body>
+</html>

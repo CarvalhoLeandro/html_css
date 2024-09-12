@@ -1,0 +1,14 @@
+h1{
+    font: normal bolder 4em 'Times New Romam', serif;
+    text-align: center;
+}
+
+h2{
+    /* shorthand para fontes=> font: font-style font-weight font-size font-family*/
+    font: normal bolder 3em 'Times New Romam', serif;
+    text-align: center;
+}
+p{
+    font: italic normal 1.5em 'Arial', sans-serif;
+}
+

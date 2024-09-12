@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+</head>
+<body>
+    <h1>Trabalhando com video</h1>
+    <h2>Inserindo vídeos hospedados no meu próprio servidor.</h2>
+    <p>Este vídeo está Hospedado no meu próprio servidor.</p>
+
+    <!-- Tag 'video' para inserir video -->
+     <video src="media/limoes_hand.webm" width="300"   autoplay loop  ></video>
+
+    <!-- Pode existir navegador que não seja compaatível com certos formatos de vídeo, então é de bom uso disponibilizar os tipos mais usados pelos navegadores -> mp4 - webm - ogv -->
+    
+    <!-- A tag 'poster' insere uma capa no video ( o tamanho da imagem deve ser menor que o tamanho do video (largura/altura) ) -->
+    <video width="300"  poster="media/thumb.png" controls>
+        <source src="media/limoes_hand.mp4" type="video/mp4">
+        <source src="media/limoes_hand.webm" type="video/webm">
+        <source src="media/limoes_hand.ogv" type="video/ogv">
+        <p>Seu navegador nâo é compatível</p>
+    </video>
+
+    <!-- Um jeito de economizar gastos com banda de internet no servidor é hospedar os videos no youtube ou vimeo -->
+
+    <h2>Inserindo vídeo do youtube</h2>
+    <iframe width="300" height="170" src="https://www.youtube.com/embed/BwUKoe0lEd0?si=dzvhP7_OMWTtEcVV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loop></iframe>
+    
+    <h2>Inserindo video do vimeo</h2>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/172287779?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:50%;height:100%;" title="Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+  
+</body>
+</html>

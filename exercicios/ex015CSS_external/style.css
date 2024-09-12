@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: rgb(145, 151, 124);
+}
+h2{
+    color:  rgb(173, 175, 165);
+}

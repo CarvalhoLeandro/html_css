@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+    font: normal bolder 3em 'Kaushan Script', serif;
+}
+p{
+    font: italic normal 1em 'Work Sans', sans-serif;
+}

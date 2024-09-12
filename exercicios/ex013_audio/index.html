@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <h1>Vamos Aprender a Colocar Aúdio</h1>
+   
+    <audio src="/ex013_audio/media/vlc_record.mp3" autoplay controls></audio>
+
+     <!-- Formatos de aúdio compatíveis MP3 - WAV - OGG. Podemos colocar varias fontes de aúdio -->
+    <audio preload="metadata" controls>
+    <!-- source: src -->
+        <source src="/ex013_audio/media/vlc_record.mp3" type="audio/mpeg"><!--mpeg = mp3 -->
+        <source src="audio.ogg" type="audio/ogg">
+        <source src="audio.wav" type="audio/wav"><!-- Evitar usar wav pois são grandes demais-->
+        <p>O navegador não é compativel. <a href="/ex012_imagens/media/vlc_record2.mp3">Clique Aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+    
+</body>
+</html>

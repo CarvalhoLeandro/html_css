@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+a:visited{/* pseudo classe de link já visitado*/
+    color: brown;
+    
+}
+a:hover{/* pseudo classe que estiliza quando o cursor é passado*/
+    text-decoration: underline;
+}
+
+a:active{/* pseudo classe que estiliza quando é clicado em cima*/
+    color: yellow;
+}
+
+a::after{
+    content: ' \002663';
+}
+
+a::before{
+    content: '\002663 ';
+}
+
