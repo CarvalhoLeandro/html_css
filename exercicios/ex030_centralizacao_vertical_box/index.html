@@ -7,10 +7,12 @@
     <style>
         #conteiner{
             height: 96vh;
+            /* Altura 96% do Viewport */
             background-color: black;
             
 
             position: relative;
+            /* Esse box maior vai ser a referencia para centralizar o menor */
         }
         #conteudo{
             height: 100px;
@@ -18,11 +20,14 @@
             background-color: yellow;
 
             position: absolute;
-
+            /* Box menor que vai ser centralizado */
             left: 50%;
+            /* Move o box 50% de tela da esquerda para a direita, mas a referencia é o topo esquerdo do box */
             top: 50%;
+            /* Move o box 50% de tela de cima para baixo mas a referência também é o topo esquerdo */
 
             transform: translate(-50%, -50%);
+            /* Coloca a referência bem no centro do box movendo 50% para esquerda e 50% para cima */
 
         }
     </style>
