@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(86, 111, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.botao{
+    background-color: rgb(193, 215, 235);
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao span{
+    position: relative;
+    z-index: 1;
+}
+
+.botao::before{
+    content: " ";
+    position: absolute;
+    background-color: orangered;
+    width: 0;
+    height: 0;
+
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+    transition: width .8s, heigth .8s;
+}
+
+.botao:hover::before{
+    width: 300px;
+    height: 300px;
+}
