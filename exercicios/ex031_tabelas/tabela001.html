@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            background-color: rgb(196, 248, 255);
+        }
+        table{
+            /* Tamanho de toda a tabela */
+            /* width: 400px;
+            height: 400px;  */
+            border: 5px solid black;
+            border-collapse: collapse; /* Junta as bordas das celulas da tabela*/
+            
+        }
+
+        td{
+            /* Tamanho de cada célula */
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle; 
+            color: rgb(19, 73, 221);
+        }
+        .numero{
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Tabelas em HTML</h1>
+    <!-- Hierarquia de tabela (simples)
+     
+        TABLE = Tabela
+            TABLE ROW = Linha de tabela
+                TABLE HEADER = Cabeçalho de tabela
+                TABLE DATE = Dados da tabela
+    -->
+
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>dado A1</td>
+            <td>dado B1</td>
+            <td>dado C1</td>
+            <td class="numero">365</td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td>dado A2</td>
+            <td>dado B2</td>
+            <td>dado C2</td>
+            <td class="numero">5263</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>dado A3</td>
+            <td>dado B3</td>
+            <td>dado C3</td>
+            <td class="numero">300</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
