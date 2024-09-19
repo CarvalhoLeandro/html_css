@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe com Script</title>
+</head>
+
+<body>
+    <h1>Iframe com Script</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, optio natus fugiat laboriosam non quaerat. Officiis facere possimus sit ducimus accusantium quisquam. Quas itaque cum placeat eius ipsam nisi maxime!
+    </p>
+    <!-- Bloqueado todo o ascesso ao iframe-->
+    <iframe src="script.html" referrerpolicy="no-referrer" sandbox="sandbox"></iframe>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam aliquid architecto quod voluptatibus in numquam sunt dolores alias, cupiditate dolorem odit voluptatum nisi maiores blanditiis delectus libero suscipit eligendi.</p>
+
+    <!-- Liberado apenas o script -->
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id architecto molestiae voluptate voluptatum veniam recusandae assumenda quidem ullam blanditiis ut? Commodi ut quidem facere voluptatum nihil aut nesciunt laudantium eum.</p>
+
+     <iframe src="script.html" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, facere perferendis eligendi quam dignissimos harum ea ullam ad sapiente laudantium ut cupiditate voluptas ratione impedit recusandae nisi, aliquid, deserunt molestiae?</p>
+</body>
+</html>
