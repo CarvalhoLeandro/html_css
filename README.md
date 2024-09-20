@@ -6,6 +6,7 @@
 <a >Projeto Cordel</a>
 <br>
 <a href="https://carvalholeandro.github.io/html_css/desafios_cursoemvideo/projeto_social/index.html">Projeto Social</a> 
+<br>
 <a href="https://carvalholeandro.github.io/html_css/desafios_cursoemvideo/heart_trial_animation/index.html">Heart Trial Animation</a> 
 <br>
 <a href="https://carvalholeandro.github.io/html_css/opala/index.html">Opala</a>
