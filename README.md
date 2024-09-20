@@ -1,6 +1,7 @@
 # html_css
  Projetos e exercícios HTML  e CSS.
 
-<a href="https://carvalholeandro.github.io/html_css/desafios/projeto_android/index.html" target="_blank">Projeto Android</a><br>
-<a href="https://carvalholeandro.github.io/html_css/desafios/projeto_cordel/index.html">Projeto Cordel</a> <br>
+<a>Projeto Android</a><br>
+<a >Projeto Cordel</a> <br>
+<a href="https://carvalholeandro.github.io/html_css/desafios_cursoemvideo/heart_trial_animation/index.html">Heart Trial Animation</a>
  
