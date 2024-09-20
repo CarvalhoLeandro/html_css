@@ -46,6 +46,26 @@ iframe#tela{
     left: 21px;
     height: 406px;
     width: 228px;
-   
-    
 }
+
+section#botaozinhos{
+    text-align: right;
+}
+
+
+section#botaozinhos img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    
+    box-sizing: border-box;/*efeito pra contornar o elemento quando o cursor passa por cima*/
+}
+
+/*efeito pra contornar o elemento quando o cursor passa por cima*/
+section#botaozinhos img:hover{
+    border: 2px solid white;/*aparece uma borda branca quando o cursor passa*/
+    transform: translate(-3px, -3px);/*muda o botão de posição dando uma aperencia de movimentação quando o cursor passa*/
+    box-shadow: 5px 5px 10px black ;/*amplia a sombra quando o cursor passa*/
+    transition: transform .5s, border 1s;/*determina o tempo em que o botão leva para mudar de posição e a mostragem da borda quando o cursor passa*/
+} 
